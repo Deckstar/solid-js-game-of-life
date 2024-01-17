@@ -1,0 +1,17 @@
+{
+  "code-runner.executorMap": {
+    "typescript": "\"$workspaceRoot/node_modules/.bin/ts-node\" $fullFileName"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#254782",
+    "tab.activeBorder": "#254782",
+    "titleBar.activeBackground": "#254782",
+    "titleBar.border": "#254782",
+    "titleBar.inactiveBackground": "#254782"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["Deckstar"]
+}
