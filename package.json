@@ -17,5 +17,6 @@
   },
   "dependencies": {
     "solid-js": "^1.7.6"
-  }
+  },
+  "packageManager": "yarn@4.0.2"
 }
