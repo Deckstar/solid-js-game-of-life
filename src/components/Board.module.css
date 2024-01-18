@@ -1,8 +1,5 @@
 .grid {
   display: grid;
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
   max-width: 75vw;
 }
 
@@ -11,11 +8,12 @@
   border: none;
   aspect-ratio: 1;
 
-  background: #fff;
+  transition: background-color 0.1s ease-in-out;
+  background-color: #fff;
 }
 
 .cell.alive {
-  background: #000;
+  background-color: #000;
 }
 
 .cell:not([disabled]) {
@@ -23,8 +21,8 @@
 }
 
 .cell:not([disabled]):hover {
-  background: lightgray;
+  background-color: lightgray;
 }
 .cell.alive:not([disabled]):hover {
-  background: darkslategray;
+  background-color: darkslategray;
 }
