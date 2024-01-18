@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 75vw;
+}
+
+.cell {
+  outline: 1px solid gray;
+  border: none;
+  aspect-ratio: 1;
+
+  background: #fff;
+}
+
+.cell.alive {
+  background: #000;
+}
+
+.cell:not([disabled]) {
+  cursor: pointer;
+}
+
+.cell:not([disabled]):hover {
+  background: lightgray;
+}
+.cell.alive:not([disabled]):hover {
+  background: darkslategray;
+}
