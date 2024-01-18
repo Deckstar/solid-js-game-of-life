@@ -6,6 +6,7 @@ import classes from "./GameOfLife.module.css";
 import {
   BOARD_SIZE,
   GameOfLifeState,
+  randomize,
   reset,
   useBoard,
   useGameOn,
@@ -103,8 +104,13 @@ const GameOfLife = () => {
         <button onClick={() => setIsGameOn((wasOn) => !wasOn)}>
           {isGameOn() ? "Pause" : "Start"}
         </button>
+
         <button disabled={isGameOn()} onClick={reset}>
           Reset
+        </button>
+
+        <button disabled={isGameOn()} onClick={randomize}>
+          Randomize
         </button>
       </div>
     </div>
